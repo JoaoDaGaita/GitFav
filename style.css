@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-color: #000000;
+  --bg-input-color: #06181C;
+  --bg-button-color: #065e7c;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+}
+
+#app {
+  max-width: 112rem;
+  margin: 11.5rem auto;
+}
+
+header {
+  display: flex;
+  gap: 29.4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  gap: .8rem;
+}
+
+#inputAdd {
+  width: 46rem;
+  border: 0;
+  background-color: var(--bg-input-color);
+  padding: 1.6rem;
+  color: #7c7c8a;
+  font-size: 1.6rem;
+  border-radius: .5rem;
+}
+
+#addButton {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 3.2rem;
+  gap: .8rem;
+  background-color: var(--bg-button-color);
+  border: 0;
+  border-radius: .5rem;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.4;
+  line-height: 2.4rem;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  margin-top: 8.7rem;
+  border-radius: 1.2rem;
+  border-collapse: collapse;
+  border: 1px solid #4a808c;
+}
+
+table * {
+  font-size: 2rem;
+  color: #e1e1e6;
+}
+
+table th {
+  background: #092d38;
+  text-align: left;
+  color: #e1e1e6;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-left: 4rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+table tr:nth-child(even) {
+  background: #06181c;
+}
+
+table tr:nth-child(odd) {
+  background: transparent;
+}
+
+table td {
+  padding-left: 4rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  text-align: left;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+
+.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user a {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  text-decoration: none;
+  
+}
+
+.user a p {
+  font-weight: bold;
+}
+
+.remove {
+  cursor: pointer;
+  font-weight: bold;
+  color: #F75a68;
+  background-color: transparent;
+  border: 0;
+}
+
+.remove:hover {
+  color: red;
+}
+
+#emptyFavorites {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  height: 60rem;
+}
+
+#emptyFavorites h2 {
+  font-size: 4rem;
+  color: #4e5455;
+}
